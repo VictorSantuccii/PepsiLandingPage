@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0065c3;
+    font-family: "Poppins";
+}
+
+header{
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+
+
+header img{
+    margin: 10px 30px;
+    position: absolute;
+    max-width: 160px;
+    -webkit-filter: drop-shadow(0px 2px 10px rgba(0 0 0 / 90%)); 
+        filter: drop-shadow(0px 5px 10px rgba(0 0 0 / 90%));
+    cursor: pointer;
+}
+
+header div button{
+    font-family: "Poppins";
+    position: absolute;
+    margin-top: 15px;
+    background-color: #ff0303da;
+    color: #ffffff;
+    width: 170px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 15px 2.5px 15px 7px ;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgb(83, 83, 83);
+    cursor: pointer;
+}
+
+header div button:hover{
+    background-color: #ffffff;
+    color: #0065c3;
+    border:2px solid #c30000;
+    transition: all 0.3s;
+}
+
+.entre{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+
+}
+
+header ul li{
+    margin-right: 70px;
+    margin-top: 20px;
+
+}
+
+header ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header ul a:hover{
+    color: rgb(255, 57, 57);
+    transition: all 0.3s;
+}
+
+#form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background: linear-gradient( #0065c3, rgb(50, 122, 255));
+    z-index: -1;
+    box-shadow: 10px 10px 10px 10px #0f0031;
+
+}
+
+*::selection{
+    color: #fff;
+    background-color: #c30000;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 190px;
+    left: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container img{
+    max-width: 80%;
+    -webkit-filter: drop-shadow(0px 20px 160px rgba(0 0 0 / 90%)); 
+        filter: drop-shadow(0px 20px 160px rgba(0 0 0 / 90%));
+        animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(11px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(11px);
+    }
+}
+
+#text{
+    position: absolute;
+    top: 22.5%;
+    left: 14.8%;
+    width: 900px;
+    height: 400px;
+    background-color: #00000000;
+    z-index: -1;
+}
+
+#text h1, p{
+    color: white;
+    text-shadow: 100px 1px 1px 1px black;
+}
+
+#thats{
+    text-transform: uppercase;
+    font-size: 75px;
+    
+}
+
+#like{
+    font-size: 135px;
+}
+
+#lorem{
+    font-size: 20px;
+    display: block;
+}
+
+#get{
+    font-family: "Poppins";
+    margin-top: 40px;
+    width: 220px;
+    height: 46px;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#get:hover{
+    background-color: #ff2323;
+    transition: all 0.4s ease;
+
+}
+
+#pepsis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    top: 77%;
+    left: 34%;
+    width: 600px;
+    height: 200px;
+    -webkit-filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.9)); 
+        filter: drop-shadow(0px 20px 60px rgb(0, 0, 0));
+}
+
+#pepsis #verde{
+    width: 145px;
+    height: 145px;
+}
+
+#pepsis #azul{
+    width: 176px;
+    height: 176px;
+}
+
+#pepsis #preta{
+    width: 155px;
+    height: 155px;
+}
+
+#preta:hover, #verde:hover, #azul:hover{
+    transform: translateY(-20px) scale(1.2) rotate(-10deg);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+#users{
+    position: absolute;
+    top: 350px;
+    left: 1800px;
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#users i{
+    margin-top: 40px;
+    font-size: 50px;
+    
+}
+
+#users i:hover{
+    color:#ff0101;
+    transition: all 0.3s;
+}
